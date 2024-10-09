@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hell Library</title>
+    <link rel="stylesheet" href="Hell library.css">
+</head>
+<body>
+    <div class="container">
+        <!---------navigetion-------------->
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-left-side-wrapper">
+                   <a href="index.html">Home</a>
+                </div>
+            
+                <div class="nav-right-side-wrapper">
+                   <a href="About.html">About</a>
+                </div>
+            </div>
+            <!----logo nav---------------->
+            <div class="right-side">
+                <div class="brand">
+                    <div>Davidson Daniel</div>
+                </div>
+            </div>
+        </div>
+<!---body  of the website-->
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/black-clover.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="subtitle">black clover is a japenese manga series written and illustrated by <em>yuki tabate</em>...</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Dragon-ball-super.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Dragon ball super is a japenese manage series written by <em>akira teriyama</em> and illustrated by <em>toyotarou...</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Demon-Slayer.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Demon slayer:kimetsu no yaiba is a japenese manga series written and illustrated by <em>koyoharu gotouge</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Hunter-x-Hunter.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Hunter x Hunter is a japenese manage series written and illustrated by <em>yoshihiro togashi</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/My-Hore-Academia.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">my hero academia is a japenese superhero mange series written and illustrated by <em>kohei horikoshi</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Naruto.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Naruto is a japenese mange series written and illustrated by <em>masashi kishimoto</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/one-piece.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">one piece is a japenese manga series written and illustrated by <em>eiichiro oda</em></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/one-punch.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">one punch man is a japenese superhore manga series created by <em>one</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Avatar.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">avater:the last airbender was co-created and produced by <em>michael dante dimartino amd bryan konietzko</em> at nickelodeon animation studios in burbank,california.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/bleach.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">lchigo kurosaki never asked for the ability to see ghosts he was born with the gift.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/Devil-may-cry.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Devil May Cry is a series of action-adventure games created by <em>>Hideki Kamiya</em>.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(image/ant-man.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle"> ant-man he is reformed thief and an electronics expert.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    
+</body>
+<!----java function-->
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+
+</html>
